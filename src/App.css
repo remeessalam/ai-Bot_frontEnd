@@ -1,10 +1,74 @@
 .page-container {
   width: 100vw;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 9, 121, 0.8421962535014006) 54%,
-    rgba(0, 212, 255, 1) 100%
+    0deg,
+    rgba(133, 174, 175, 1) 0%,
+    rgba(124, 191, 134, 1) 53%,
+    rgba(157, 219, 103, 1) 95%
   );
+  overflow: hidden;
 }
+.input-box {
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  gap: 10px;
+}
+.inputBox {
+  border: none;
+  width: 70%;
+  height: 40px;
+  border-radius: 16px;
+  padding: 0 13px;
+}
+.inputBox:focus {
+  outline: none;
+}
+.button {
+  width: 20%;
+  border-radius: 16px;
+  border: none;
+  background: black;
+  color: white;
+}
+.result-container {
+  width: 70%;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  width: 50px;
+  height: 50px;
+  background: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid black;
+  border-top-color: white;
+  animation: rotate 1s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* .inner-circle {
+  width: 45px;
+  height: 45px;
+  background: white;
+  border-radius: 50%;
+} */
